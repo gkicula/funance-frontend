@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { CompetenciasRoutingModule } from './competencias-routing.module';
 import { CompetenciasComponent } from './competencias/competencias.component';
 import { AppMaterialModule } from '../shared/app-material/app-material.module';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -12,7 +13,8 @@ import { AppMaterialModule } from '../shared/app-material/app-material.module';
   imports: [
     CommonModule,
     CompetenciasRoutingModule,
-    AppMaterialModule
+    AppMaterialModule,
+    SharedModule
   ]
 })
 export class CompetenciasModule { }

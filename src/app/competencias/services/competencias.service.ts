@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Competencia } from '../model/competencia';
 import { HttpClient } from '@angular/common/http';
-import { first, take, tap } from 'rxjs/operators';
+import { delay, first, take, tap } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
