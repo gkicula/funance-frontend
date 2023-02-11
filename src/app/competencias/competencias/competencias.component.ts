@@ -25,7 +25,7 @@ export class CompetenciasComponent implements OnInit {
   constructor(
     private competenciasService: CompetenciasService,
     public dialog: MatDialog
-    ) { 
+    ) {
     //this.competenciasService = new CompetenciasService();
     this.competencias$ = this.competenciasService.list()
     .pipe(

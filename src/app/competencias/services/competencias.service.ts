@@ -2,19 +2,19 @@ import { Injectable } from '@angular/core';
 import { Competencia } from '../model/competencia';
 import { HttpClient } from '@angular/common/http';
 import { delay, first, take, tap } from 'rxjs/operators';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CompetenciasService {
 
-  private readonly API = '/assets/valores.json'
+  //private readonly API = '/assets/valores.json'
 
-  //Feito a injeção da dependência
   constructor(private httpClient: HttpClient) { }
 
   list() {
-    return this.httpClient.get<Competencia[]>(this.API).pipe(first());
+    return this.httpClient.get<Competencia[]>(environment.api.getCompetencies).pipe(first());
 
     /*************************************************************************
     *                                                                        *
