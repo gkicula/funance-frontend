@@ -26,4 +26,12 @@ export class CompetenciasService {
     *);                                                                      *
     *************************************************************************/
   }
+
+  save(form: Competencia) {
+    return this.httpClient.post<Competencia>(environment.api.saveData, form);
+  }
+
+  getCrypto(crypto: any) {
+    return this.httpClient.get<any>(environment.api.getCripto + crypto);
+  }
 }
