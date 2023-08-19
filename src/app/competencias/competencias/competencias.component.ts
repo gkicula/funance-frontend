@@ -19,6 +19,7 @@ export class CompetenciasComponent implements OnInit {
   displayedColumns = ['descricao', 'valor', 'acoes'];
   descricao: String
   display: boolean = false;
+  opened: boolean = false;
 
   //competenciasService: CompetenciasService;
 

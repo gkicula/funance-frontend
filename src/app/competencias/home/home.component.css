@@ -1,0 +1,27 @@
+
+.caller {
+  display: flex;
+}
+/* :host {
+  display:block;
+  background-color: red;
+} */
+
+.home-card {
+  margin: 5vh;
+  max-width: 300px;
+  flex: 1;
+}
+
+.card-container {
+  display: flex;
+}
+
+.caller {
+  margin: 20vh;
+}
+
+mat-card img{
+  object-fit: cover;
+  height: 60%;
+}

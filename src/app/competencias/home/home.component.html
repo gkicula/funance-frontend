@@ -1,0 +1,51 @@
+
+<div class="caller">
+  <div>
+    <h1>Your finances platform!</h1>
+    <p>Keep your money well so your minds are!</p>
+    <button mat-raised-button color="primary" [routerLink]="['competencias']" routerLinkActive="router-link-active"
+            class="button-caller">
+      <mat-icon>account_balance_wallet</mat-icon>
+      <a> Let's try!</a>
+    </button>
+  </div>
+  <div>
+  </div>
+</div>
+<mat-divider></mat-divider>
+<div class="card-container">
+  <mat-card class="home-card">
+    <mat-card-header>
+      <mat-icon mat-card-avatar>account_balance</mat-icon>
+      <mat-card-title>Finane Control</mat-card-title>
+      <mat-card-subtitle>Keep your finances under control.</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="assets/moneyfinance.png" alt="Photo of moneyFinance">
+    <mat-card-content>
+      <p>
+        Manage your finance. It's simple!
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-stroked-button [routerLink]="['competencias']" routerLinkActive="router-link-active" >Let's try!</button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card class="home-card">
+    <mat-card-header>
+      <mat-icon mat-card-avatar>dashboard</mat-icon>
+      <mat-card-title>Dashboard</mat-card-title>
+      <mat-card-subtitle>See all better.</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="assets/dashboard.png" alt="Photo of dashboard">
+    <mat-card-content>
+      <p>
+        View your informations. Not only datas!
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-stroked-button>Coming Soon!</button>
+      <!-- <button mat-stroked-button [routerLink]="['competencias']" routerLinkActive="router-link-active" >Coming Soon!</button> -->
+    </mat-card-actions>
+  </mat-card>
+</div>

@@ -7,9 +7,11 @@ import { CompetenciasComponent } from './competencias/competencias.component';
 import { AppMaterialModule } from '../shared/app-material/app-material.module';
 import { SharedModule } from '../shared/shared.module';
 import { CompetenciasFormComponent } from './competencias-form/competencias-form.component';
+import { HomeComponent } from './home/home.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
 
 @NgModule({
-  declarations: [CompetenciasComponent, CompetenciasFormComponent],
+  declarations: [CompetenciasComponent, CompetenciasFormComponent, HomeComponent, ToolbarComponent],
   imports: [
     CommonModule,
     CompetenciasRoutingModule,

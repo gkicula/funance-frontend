@@ -3,9 +3,9 @@ import { Routes, RouterModule } from '@angular/router';
 
 
 const routes: Routes = [
-  { path: '', pathMatch:'full', redirectTo:'competencias' },
+  { path: '', pathMatch:'full', redirectTo:'home' },
   {
-    path: 'competencias',
+    path: 'home',
     loadChildren: () => import('./competencias/competencias.module').then(m => m.CompetenciasModule)
   }
 ];
